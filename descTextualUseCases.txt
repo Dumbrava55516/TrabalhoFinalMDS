@@ -1,0 +1,151 @@
+1. alugar quarto
+
+Ator Principal: Cliente
+Cenário de Sucesso Principal:
+O cliente escolhe um quarto disponível no sistema
+O cliente vai para o checkout
+O cliente preenche as informações de pagamento
+O cliente confirma a reserva
+O sistema confirma a reserva imediatamente
+Extensões:
+3a: O cliente já possui um pagamento registado
+O cliente pode aceitar ou alterar essas informações antes de continuar com a reserva
+
+
+2. fazer pagamento
+
+Ator Principal: Cliente
+Cenário de Sucesso Principal:
+O cliente seleciona o método de pagamento
+O cliente preenche os dados necessários para pagamento
+O sistema processa o pagamento
+O sistema confirma o pagamento e regista a transação
+Extensões:
+3a: O sistema falha ao processar o pagamento
+O cliente pode tentar novamente ou cancelar a operação
+
+
+3. confirmar reserva
+
+Ator Principal: Gestor de Hotel, Funcionário do Hotel
+Cenário de Sucesso Principal:
+O gestor ou funcionário seleciona a reserva pendente no sistema
+O sistema exibe os detalhes da reserva
+O gestor confirma a reserva
+O sistema atualiza o status da reserva para "confirmada"
+Extensões:
+3a: O gestor decide alterar os detalhes da reserva
+O sistema permite editar a reserva
+O gestor confirma a alteração e o sistema atualiza a reserva
+
+
+4. cancelar registo
+
+Ator Principal: Cliente, funcionário hotel
+Cenário de Sucesso Principal:
+O cliente ou funcionário escolhe cancelar uma reserva
+O sistema confirma o cancelamento
+O sistema atualiza o status da reserva
+Extensões:
+3a: O cliente deseja receber reembolso
+O sistema verifica o pagamento
+O sistema processa o reembolso e atualiza o status do pagamento
+
+
+5. devolver dinheiro
+
+Ator Principal: Sistema
+Cenário de Sucesso Principal:
+O sistema verifica que o cancelamento foi validado
+O sistema processa o reembolso para o cliente
+Extensões:
+2a: O sistema falha ao processar o reembolso
+O sistema notifica o cliente sobre o erro
+O cliente pode tentar novamente ou cancelar a operação
+
+
+6. procurar quarto
+
+Ator Principal: Cliente, funcionário hotel
+Cenário de Sucesso Principal:
+O cliente ou funcionário escolhem os critérios de pesquisa (capacidade, vista, etc.)
+O sistema exibe uma lista de quartos que atendem aos critérios de pesquisa
+O cliente escolhe um quarto
+O sistema exibe os detalhes do quarto selecionado
+Extensões:
+3a: O cliente não encontra quartos disponíveis
+O sistema sugere quartos alternativos ou disponibilidades em datas diferentes
+O cliente pode aceitar a sugestão ou continuar a busca
+
+
+7. ver conta
+
+Ator Principal: Cliente
+Cenário de Sucesso Principal:
+O cliente solicita a visualização da conta
+O sistema exibe os detalhes da conta
+O cliente verifica as informações
+Extensões:
+3a: O cliente deseja registar uma ocorrência relacionada à conta
+O cliente preenche um formulário de ocorrência
+O sistema regista a ocorrência
+
+
+8. registar ocorrências
+
+Ator Principal: Gestor de Hotel, Funcionário do Hotel
+Cenário de Sucesso Principal:
+O gestor ou funcionário selecionam a opção de registar uma ocorrência
+O gestor ou funcionário preenche as informações da ocorrência
+O sistema regista a ocorrência no sistema
+Extensões:
+
+
+9. verificar manutenção
+
+Ator Principal: Funcionário do Hotel, gestor hotel
+Cenário de Sucesso Principal:
+O funcionário ou gestor hotel solicitam a verificação das manutenções pendentes
+O sistema exibe a lista de manutenções necessárias
+O funcionário atualiza as manutenções
+O sistema atualiza o status das manutenções no sistema
+Extensões:
+3a: O funcionário deseja adicionar uma nova manutenção
+O funcionário preenche os dados e o sistema regista a nova manutenção
+
+
+10. fazer avaliação
+
+Ator Principal: Cliente
+Cenário de Sucesso Principal:
+O cliente seleciona a opção de avaliação
+O cliente preenche a avaliação
+O sistema regista a avaliação e a associa à reserva
+Extensões:
+2a: O cliente deseja editar a avaliação
+
+
+
+11. registar conta
+
+Ator Principal: Cliente
+Cenário de Sucesso Principal:
+O cliente preenche os dados necessários para registar a conta
+O sistema regista a nova conta
+O sistema confirma a criação da conta
+Extensões:
+2a: O cliente já possui uma conta
+O sistema exibe a opção de login
+O cliente faz login com as suas credenciais
+
+
+12. operações CRUD
+
+Ator Principal: Gestor de Sistema
+Cenário de Sucesso Principal:
+O gestor de sistema seleciona a operação CRUD desejada (criar, ler, atualizar ou deletar)
+O sistema exibe os dados relevantes para a operação
+O gestor realiza a operação e o sistema atualiza os dados
+Extensões:
+2a: O gestor deseja cancelar a operação
+O sistema retorna à tela anterior sem realizar alterações

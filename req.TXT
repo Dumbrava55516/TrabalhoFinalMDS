@@ -1,0 +1,33 @@
+Requisitos de Utilizador:
+
+"O gestor do sistema deve disponibilizar operações que permitam criar, editar e remover quartos."
+"Este tipo de gestão apenas pode ser efetuado pelo gestor do sistema."
+"O gestor do hotel também deve conseguir realizar estas operações."
+"O gestor deve ser capaz de realizar reservas para os hóspedes."
+"As reservas feitas pelos hóspedes devem ser confirmadas pelo gestor ou pelos funcionários."
+"Devem existir operações que permitam aos funcionários do hotel verificar quais os quartos que precisam de manutenção."
+"Os gestores do hotel também devem conseguir realizar estas operações."
+"As reservas podem ser realizadas pelo gestor do sistema, pelos funcionários ou pelos hóspedes."
+"As reservas feitas pelos hóspedes devem ser confirmadas pelo gestor ou pelos funcionários."
+"As reservas podem ser realizadas pelos hóspedes."
+"Depois de cada estadia, deve ser possível registar a avaliação dos hóspedes."
+"A avaliação apenas pode ser feita até 1 mês depois do final da estadia."
+
+Requisitos de Sistema:
+
+
+"O sistema deve disponibilizar operações que permitam ao gestor criar, editar e remover quartos."
+"Devem ser especificadas todas as características do quarto, incluindo a capacidade máxima de hóspedes, o número de camas, o tipo de vista, se tem cozinha ou não, o número de casas de banho e se tem ou não varanda."
+"Qualquer uma das propriedades deve poder ser alterada a qualquer momento pelo gestor do sistema."
+"Devem existir operações que permitam aos funcionários do hotel verificar quais os quartos que precisam de manutenção."
+"O sistema deve também permitir registar todas as manutenções que são realizadas aos quartos."
+"Este sistema deve também ser usado para fazer a gestão das reservas do hotel."
+"O sistema deve disponibilizar operações que permitam sugerir quais os quartos que devem ficar associados a uma reserva, de acordo com as restrições da reserva."
+"Para que uma reserva possa ser feita, os hóspedes devem ser registados no sistema, incluindo os seus dados pessoais."
+"As reservas podem ser realizadas pelo gestor do sistema, pelos funcionários ou pelos hóspedes."
+"As reservas feitas pelos hóspedes devem ser confirmadas pelo gestor ou pelos funcionários."
+"Associado a cada estadia, deverá existir um registo de ocorrências, como por exemplo queixas dos hóspedes ou comportamentos menos apropriados por parte dos hóspedes."
+"Este registo deverá ficar associado ao histórico de cada hóspede."
+Avaliação de Estadia:
+"Depois de cada estadia, deve ser possível registar a avaliação dos hóspedes."
+"Esta avaliação apenas pode ser feita até 1 mês depois do final da estadia."
